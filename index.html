@@ -25,10 +25,18 @@
     <meta name="twitter:description" content="IT-trained VA who builds the systems, not just runs them. 14+ years of experience.">
     <meta name="twitter:image" content="https://japhette-vms.github.io/og-image.png">
 
-    <!-- Favicon — inline SVG so no file upload needed -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23111'/><text y='68' x='50' text-anchor='middle' font-size='52' font-family='Inter,sans-serif' font-weight='700' fill='white'>JP</text></svg>">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#070709">
 
-    <!-- Google Analytics — replace G-XXXXXXXXXX with your real Measurement ID from analytics.google.com -->
+    <!-- Google Analytics — not yet connected. To enable: create a GA4 property at
+         analytics.google.com, then replace G-XXXXXXXXXX in both places below with
+         your real Measurement ID and uncomment this block. -->
+    <!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -36,6 +44,7 @@
         gtag('js', new Date());
         gtag('config', 'G-XXXXXXXXXX');
     </script>
+    -->
 
     <!-- Typography & Icon Layers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -172,7 +181,7 @@
     </div>
 
     <!-- Audio MP3 Anchor Node -->
-    <audio id="ambientTrack" loop preload="auto">
+    <audio id="ambientTrack" loop preload="none">
         <source src="ambient.mp3" type="audio/mpeg">
     </audio>
 
@@ -203,6 +212,7 @@
                 <a href="resume.pdf" download="Japhette_Pulido_Resume.pdf" class="btn-secondary magnetic"><i class="fa-solid fa-file-arrow-down" style="margin-right: 8px;"></i> Download Resume</a>
                 <a href="services.pdf" download="Japhette_Pulido_Services.pdf" class="btn-secondary magnetic"><i class="fa-solid fa-file-lines" style="margin-right: 8px;"></i> Services & Rates</a>
             </div>
+            <p class="hero-buttons-caption">Full resume, PDF · Services list with rates, PDF</p>
         </div>
     </header>
 
@@ -538,6 +548,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Mid-Page Conversion Point -->
+    <section class="mid-cta-band">
+        <div class="container mid-cta-inner">
+            <p class="mid-cta-text">Want a back-office that runs like this one? Let's talk about your operation.</p>
+            <a href="#contact" class="btn-primary magnetic">Work With Me</a>
         </div>
     </section>
 
@@ -880,6 +898,7 @@
                         <span class="dot-btn"></span><span class="dot-btn"></span><span class="dot-btn"></span>
                         <span class="terminal-title">contact_form.exe</span>
                     </div>
+                    <p class="form-response-note"><i class="fa-solid fa-bolt"></i> Typically responds within 24 hours</p>
                     <form action="https://formspree.io/f/xwvzbeqa" method="POST" target="_blank" class="formspree-form-element">
                         <div class="form-input-group">
                             <label class="form-lbl">Your Name</label>

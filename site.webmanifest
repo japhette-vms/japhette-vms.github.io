@@ -1,0 +1,21 @@
+{
+    "name": "Japhette Alec Pulido — Operations Manager & Executive VA",
+    "short_name": "Japhette Pulido",
+    "description": "IT-trained Operations Manager & Executive Virtual Assistant. AI-driven workflows, CRM systems, and zero-error admin infrastructure for remote teams.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#070709",
+    "theme_color": "#070709",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
