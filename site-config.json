@@ -4,9 +4,34 @@
   "intro_video": "",
   "intro_poster": "",
   "booking_url": "",
-  "testimonials": [],
+  "testimonials": [
+    {
+      "quote": "Japhette took a massive weight off our shoulders by building out our employee handbooks, attendance policies, and day-to-day compliance tracking across multiple store locations. He jumped right in, organized our processes, and consistently delivered reliable support without needing to be micromanaged.",
+      "name": "Romelle",
+      "role": "Assistant, Consulting Company"
+    },
+    {
+      "quote": "Working with Japhette completely elevated our local marketing and store operations. From designing sharp ad creatives and promotional graphics to streamlining our retail compliance and onboarding forms, he brings a rare mix of creativity and operational discipline.",
+      "name": "Dom",
+      "role": "Store Owner, DHL Express Partner Location"
+    },
+    {
+      "quote": "Japhette was instrumental in keeping our member accounts, billing, and lead funnels running smoothly. He handled everything from CRM automation and social media content to member support with speed, accuracy, and zero drama.",
+      "name": "Steve",
+      "role": "Owner, Fit Body Boot Camp"
+    }
+  ],
   "certifications": [],
-  "results": [],
+  "results": [
+    {
+      "value": "~50",
+      "label": "gym appointments booked a month"
+    },
+    {
+      "value": "~90%",
+      "label": "of the monthly appointment quota"
+    }
+  ],
   "workflow_screenshot": "",
   "workflow_caption": "",
   "goatcounter": ""
