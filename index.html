@@ -14,9 +14,12 @@
 <meta property="og:image" content="https://japhette-vms.github.io/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Japhette Alec Pulido, Executive Assistant and GoHighLevel automation">
+<meta property="og:site_name" content="Japhette Alec Pulido">
 <link rel="canonical" href="https://japhette-vms.github.io/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Japhette Alec Pulido", "jobTitle": "Executive Assistant & GoHighLevel Automation Specialist", "description": "Executive Assistant and Operations Support with GoHighLevel funnels and automation experience. Based in the Philippines, available to overlap US business hours.", "url": "https://japhette-vms.github.io/", "email": "jap.pulido789@gmail.com", "image": "https://japhette-vms.github.io/profile.jpg", "address": {"@type": "PostalAddress", "addressCountry": "PH"}, "sameAs": ["https://www.linkedin.com/in/japhette-alec-pulido"], "knowsAbout": ["Executive Assistance", "Operations Support", "GoHighLevel", "Funnels and Automation", "Lead Follow-up", "Cold Calling", "Customer Support", "Performance Reporting", "Social Media Management"], "alumniOf": {"@type": "CollegeOrUniversity", "name": "Colegio de San Juan de Letran"}}</script>
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://japhette-vms.github.io/og-image.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%234b3fd6%27/%3E%3Ctext x=%2750%27 y=%2768%27 font-size=%2756%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27sans-serif%27 font-weight=%27bold%27%3EJP%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +83,7 @@ h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:1.5rem}
 .th:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .th img{height:20rem;width:auto;display:block;border-radius:.5rem;border:1px solid var(--line)}
 .strip figure{margin:0;flex:none;scroll-snap-align:start}
-.strip video{height:20rem;display:block;background:#000;border-radius:.5rem}
+.strip video{height:20rem;max-width:85vw;object-fit:contain;display:block;background:#000;border-radius:.5rem}
 figcaption{font-size:.9rem;color:var(--muted);margin-top:.3rem}
 #lb{max-width:96vw;max-height:96vh;padding:0;border:0;background:transparent}
 #lb img{max-width:96vw;max-height:92vh;display:block;border-radius:.5rem}
@@ -93,6 +96,9 @@ figcaption{font-size:.9rem;color:var(--muted);margin-top:.3rem}
 #lb .x{position:absolute;top:.5rem;right:.5rem;width:2.5rem;height:2.5rem;border-radius:50%;border:0;background:rgba(0,0,0,.65);color:#fff;font-size:1.4rem;line-height:1;cursor:pointer}
 footer{margin-top:4rem;padding:2.5rem 0 3rem;border-top:1px solid var(--line)}
 footer p{margin:.3rem 0;color:var(--muted)}
+.more{display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;margin:1.25rem 0 0}.more a{font-weight:500}
+main{display:block}
+@media print{.bg,#stick,#theme,.tabs,.book{display:none!important}.js .rv{opacity:1!important;transform:none!important}body{background:#fff;color:#000}}
 @media (max-width:640px){.hero{grid-template-columns:1fr}.photo{order:-1;width:8rem;height:8rem}.job{grid-template-columns:1fr;gap:.3rem}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
@@ -121,13 +127,14 @@ footer p{margin:.3rem 0;color:var(--muted)}
 @media (prefers-reduced-motion:reduce){#stick{transition:none}}
 
 /* ---- beautification layer ---- */
-:root{--g2:#d9622b;--glow:rgba(75,63,214,.18);--bgimg:url(bg-light.webp)}
+:root{--g2:#c24e17;--glow:rgba(75,63,214,.18);--bgimg:url(bg-light.webp)}
 :root[data-theme="dark"]{--g2:#ff9a76;--glow:rgba(156,147,255,.38);--bgimg:url(bg.jpg)}
 body{position:relative}
 .bg{position:absolute;inset:0 0 auto 0;height:max(100svh,42rem);z-index:-1;pointer-events:none;overflow:hidden;-webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
 .bg::before{content:"";position:absolute;inset:0;background:var(--bgimg) right top/cover no-repeat}
 .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0,transparent 55%)}
-.grad{background:linear-gradient(90deg,var(--accent),var(--g2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.grad{color:var(--accent)}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){.grad{background:linear-gradient(90deg,var(--accent),var(--g2));-webkit-background-clip:text;background-clip:text;color:transparent}}
 h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margin-top:.6rem;background:linear-gradient(90deg,var(--accent),var(--g2))}
 .photo{box-shadow:0 0 0 2px var(--accent),0 0 48px var(--glow)}
 .pill,.pipe,.stats li{background:var(--surface);background:color-mix(in srgb,var(--surface) 76%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
@@ -143,18 +150,19 @@ h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margi
 </head>
 <body>
 <div class="bg" aria-hidden="true"></div>
-<a class="skip" href="#work">Skip to content</a>
+<a class="skip" href="#main">Skip to content</a>
 <div class="wrap" id="top">
-<nav><b>Japhette Alec Pulido</b><div><a href="#work">What I do</a><a href="#case-study">Case study</a><a href="#my-work">Work</a><a href="design.html">Design</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#how">How I work</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><button id="theme" type="button" aria-pressed="false">Noir</button></div></nav>
+<nav aria-label="Primary"><b>Japhette Alec Pulido</b><div><a href="#work">What I do</a><a href="#case-study">Case study</a><a href="#my-work">Work</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#contact">Contact</a><button id="theme" type="button" aria-pressed="false">Dark</button></div></nav>
 
+<main id="main" tabindex="-1">
 <header class="hero">
 <div>
 <span class="pill" id="avail">Open to new roles · Philippines (PHT) · overlaps US hours</span>
-<h1>I build the follow-up systems that <span class="grad">turn leads into members.</span></h1>
+<h1>I build the follow-up systems that <span class="grad">turn leads into booked customers.</span></h1>
 <p>Executive Assistant and Operations Support with GoHighLevel funnels and automation. Running my own business since 2012 and supporting US-based clients remotely for three years.</p>
-<div class="btns"><a class="btn main" href="mailto:jap.pulido789@gmail.com">Email me</a><a class="btn alt" href="resume.pdf">Download resume</a><a class="btn alt" href="#audit">Free mini audit</a><a class="btn alt" href="#book" id="bookbtn" hidden>Book a call</a></div>
+<div class="btns"><a class="btn main" href="mailto:jap.pulido789@gmail.com">Email me</a><a class="btn alt" href="resume.pdf">Download resume</a><a class="btn alt" href="#book" id="bookbtn" hidden>Book a call</a></div>
 </div>
-<img class="photo" src="profile.jpg" alt="Portrait of Japhette Alec Pulido" onerror="this.style.display='none'">
+<img class="photo" src="profile.jpg" width="176" height="176" fetchpriority="high" alt="Portrait of Japhette Alec Pulido" onerror="this.style.display='none'">
 </header>
 
 <ol class="pipe" aria-label="Example lead pipeline I have built in GoHighLevel">
@@ -214,7 +222,7 @@ h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margi
 <div class="proj soon" style="margin-top:1rem">
 <h3>Lead and booking system <span class="badge">Coming soon</span></h3>
 <p>I’m planning my own lightweight lead and booking tool, built from what I have learned running pipelines, follow-up, and reminders in GoHighLevel. It is in development. Tell me what you would want it to do on an intro call.</p>
-<a class="btn main" href="#book">Book a call</a>
+<a class="btn main booklnk" href="mailto:jap.pulido789@gmail.com?subject=Lead%20and%20booking%20system">Email me your ideas</a>
 </div>
 </section>
 
@@ -253,14 +261,14 @@ h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margi
 </section>
 
 <section id="services">
-<h2>Services and pricing</h2>
-<p class="gd">Starting rates are below. I confirm the final scope and price in writing after a short intro call.</p>
+<h2>Services</h2>
+<p class="gd" id="pricenote">I confirm the final scope and price in writing after a short intro call.</p>
 <div class="grid">
 <div><h3>GoHighLevel automation</h3><p>Lead capture, pipelines with automated follow-up, booking calendars and reminders, missed-call text-back, and reporting. A good fit for gyms, studios, and local service businesses.</p><p class="price" data-k="automation" hidden></p></div>
 <div><h3>Social media management</h3><p>Monthly content planning, a content calendar with client approval, scheduling, and posts adapted to each location or market.</p><p class="price" data-k="social" hidden></p></div>
 <div><h3>Executive assistant and operations</h3><p>Calendar, email, and calls, plus handbooks, checklists, compliance tracking, and customer or member support.</p><p class="price" data-k="ea" hidden></p></div>
 </div>
-<p style="margin-top:1.25rem"><a class="btn main" href="#book">Book a free intro call</a> <a class="btn alt" href="services-and-rates.pdf" download>Download services sheet</a></p>
+<p style="margin-top:1.25rem"><a class="btn main booklnk" href="mailto:jap.pulido789@gmail.com?subject=Intro%20call">Email for a free intro call</a> <a class="btn alt" href="services-and-rates.pdf" download>Download services sheet</a></p>
 </section>
 
 <section id="audit">
@@ -315,10 +323,10 @@ h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margi
 <details><summary>Do you only work with gyms?</summary><p>No. My work includes a DHL Express partner shop network (5 stores in 4 states), a construction and engineering business, and fitness studios.</p></details>
 <details><summary>Which tools do you use?</summary><p>GoHighLevel, Salesforce, Zendesk, Google Workspace, Microsoft 365, Notion, Asana, Trello, Slack, Meta Business Suite, Buffer, Canva, CapCut, and AI tools such as ChatGPT, Claude, and Gemini. The full list is under Skills.</p></details>
 <details><summary>How do you handle client information?</summary><p>I keep client and customer details out of public work. For example, I blurred customer names on package labels in this portfolio.</p></details>
-<details><summary>Are you available for new roles?</summary><p>Yes. Email or message me on WhatsApp to talk about hours and a start date.</p></details>
+<details><summary>Are you available for new roles?</summary><p>Yes. Email me or message me on LinkedIn to talk about hours and a start date.</p></details>
 <details><summary>What happens on the intro call?</summary><p>We spend 30 minutes on your goals and how leads, bookings, and social media work today. I tell you honestly whether I can help, and if so, what I would do first. There is no prep and no cost.</p></details>
 <details><summary>How does pricing work?</summary><p>I quote after the intro call, based on the size of the work. You get the scope and price in writing before we start.</p></details>
-<details><summary>Do you have certifications?</summary><p>No. I’m self-taught and learned by doing the work across gyms, a DHL Express partner shop network, and an engineering business. The case study, testimonials, and work samples on this page show what I have done.</p></details>
+<details><summary>Do you have certifications?</summary><p>No. I’m self-taught and learned by doing the work across gyms, a DHL Express partner shop network, and an engineering business. The case study and work samples on this page show what I have done.</p></details>
 <details><summary>Can you work in the tools I already use?</summary><p>Yes. I work in your existing CRM, calendar, and communication tools, and I can set up GoHighLevel if you don’t have a system yet.</p></details>
 </section>
 
@@ -333,13 +341,14 @@ h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margi
 <p>Based in the Philippines (PHT) and able to overlap US business hours.</p>
 <div class="btns" style="margin:1.25rem 0 1rem">
 <a class="btn main" href="mailto:jap.pulido789@gmail.com">Email me</a>
-<a class="btn alt" href="https://wa.me/639569027896" target="_blank" rel="noopener">WhatsApp</a>
 <a class="btn alt" href="https://www.linkedin.com/in/japhette-alec-pulido/" target="_blank" rel="noopener">LinkedIn</a>
 </div>
-<p><a href="mailto:jap.pulido789@gmail.com">jap.pulido789@gmail.com</a> · <a href="https://wa.me/639569027896" target="_blank" rel="noopener">+63 956 902 7896</a></p>
+<p><a href="mailto:jap.pulido789@gmail.com">jap.pulido789@gmail.com</a></p>
 <p><a href="https://www.linkedin.com/in/japhette-alec-pulido/" target="_blank" rel="noopener">linkedin.com/in/japhette-alec-pulido</a> · <a href="resume.pdf">Resume (PDF)</a></p>
+<p class="more"><a href="design.html">Design work</a><a href="#skills">Skills and tools</a><a href="#how">How I work</a><a href="#first-weeks">First two weeks</a><a href="#audit">Free mini audit</a><a href="#faq">FAQ</a></p>
 <p class="up"><a href="#top">Back to top</a></p>
 </footer>
+</main>
 </div>
 <a id="stick" class="btn main off" href="#contact">Contact</a>
 <dialog id="lb" aria-label="Enlarged image"><img alt=""><button type="button" class="x" aria-label="Close">×</button></dialog>
@@ -360,23 +369,21 @@ new IntersectionObserver(function(e){hid.hero=e[0].isIntersecting;upd()},{thresh
 new IntersectionObserver(function(e){hid.ct=e[0].isIntersecting;upd()},{threshold:0}).observe(ct);
 hid.hero=true;upd();}else{st.classList.remove("off")}
 function safe(u){return typeof u==="string"&&/^(https:\/\/|[A-Za-z0-9_\-\/.]+$)/.test(u)}
-fetch("site-config.json",{cache:"no-cache"}).then(function(r){return r.ok?r.json():{}}).catch(function(){return {}}).then(function(c){var pr=c.prices||{};document.querySelectorAll(".price[data-k]").forEach(function(e){var v=pr[e.dataset.k];if(typeof v==="string"&&v.trim()){e.textContent=v;e.hidden=false}});
-if(!c)return;
+fetch("site-config.json",{cache:"no-cache"}).then(function(r){return r.ok?r.json():{}}).catch(function(){return {}}).then(function(c){c=c||{};var pr=c.prices||{},shown=false;document.querySelectorAll(".price[data-k]").forEach(function(e){var v=pr[e.dataset.k];if(typeof v==="string"&&v.trim()){e.textContent=v;e.hidden=false;shown=true}});if(shown){$("pricenote").textContent="Starting rates are below. I confirm the final scope and price in writing after a short intro call."}
 if(c.availability){$("avail").textContent=c.availability}
 if(safe(c.intro_video)){var v=$("introv");v.src=c.intro_video;if(safe(c.intro_poster))v.poster=c.intro_poster;$("intro").hidden=false}
-if(safe(c.booking_url)&&/^https:\/\//.test(c.booking_url)){$("bookframe").src=c.booking_url;$("book").hidden=false;var b=$("bookbtn");b.hidden=false}
+if(safe(c.booking_url)&&/^https:\/\//.test(c.booking_url)){$("bookframe").src=c.booking_url;$("book").hidden=false;var b=$("bookbtn");b.hidden=false;document.querySelectorAll(".booklnk").forEach(function(a){a.href="#book";a.textContent=a.textContent.indexOf("intro")>-1?"Book a free intro call":"Book a call"})}
 if(c.testimonials&&c.testimonials.length){var q=$("quotes");c.testimonials.forEach(function(t){if(!t||!t.quote)return;var bq=document.createElement("blockquote"),p=document.createElement("p"),ci=document.createElement("cite");p.textContent="\u201c"+t.quote+"\u201d";ci.textContent=[t.name,t.role].filter(Boolean).join(", ");bq.appendChild(p);bq.appendChild(ci);q.appendChild(bq)});if(q.children.length)$("proof").hidden=false}
 if(c.certifications&&c.certifications.length){var l=$("certlist");c.certifications.forEach(function(x){var li=document.createElement("li");li.textContent=x;l.appendChild(li)});$("certs").hidden=false}
-if(c.results&&c.results.length){var s=$("stats");c.results.forEach(function(x){if(!x||!x.value)return;var li=document.createElement("li"),b=document.createElement("b"),sp=document.createElement("span");b.textContent=x.value;sp.textContent=x.label||"";li.appendChild(b);li.appendChild(sp);s.appendChild(li)})}
+if(c.results&&c.results.length){var s=$("stats");s.innerHTML="";c.results.forEach(function(x){if(!x||!x.value)return;var li=document.createElement("li"),b=document.createElement("b"),sp=document.createElement("span");b.textContent=x.value;sp.textContent=x.label||"";li.appendChild(b);li.appendChild(sp);s.appendChild(li)})}
 if(safe(c.workflow_screenshot)){var f=$("shot"),im=f.querySelector("img");im.src=c.workflow_screenshot;im.alt=c.workflow_caption||"GoHighLevel workflow";f.querySelector("figcaption").textContent=c.workflow_caption||"";f.hidden=false}
-if(c.goatcounter&&/^[a-z0-9-]+$/i.test(c.goatcounter)){var sc=document.createElement("script");sc.async=true;sc.src="https://gc.zgo.at/count.js";sc.setAttribute("data-goatcounter","https://"+c.goatcounter+".goatcounter.com/count");document.body.appendChild(sc)}
 });
 })();
 </script>
 <script>
 (function(){var r=document.documentElement,b=document.getElementById("theme");
 function sys(){return window.matchMedia&&matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"}
-function apply(t){r.setAttribute("data-theme",t);b.textContent=t==="dark"?"Bright":"Noir";b.setAttribute("aria-pressed",t==="dark");b.setAttribute("aria-label",t==="dark"?"Switch to Bright mode":"Switch to Noir mode")}
+function apply(t){r.setAttribute("data-theme",t);b.textContent=t==="dark"?"Light":"Dark";b.setAttribute("aria-pressed",t==="dark");b.setAttribute("aria-label",t==="dark"?"Switch to light mode":"Switch to dark mode")}
 var s=null;try{s=localStorage.getItem("theme")}catch(e){}
 apply(s==="dark"||s==="light"?s:sys());
 b.addEventListener("click",function(){var t=r.getAttribute("data-theme")==="dark"?"light":"dark";apply(t);try{localStorage.setItem("theme",t)}catch(e){}});})();
@@ -388,6 +395,6 @@ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isInter
 s.forEach(function(x){x.classList.add("rv");io.observe(x)});})();
 </script>
 <script data-goatcounter="https://jap-portfolio.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+        async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
