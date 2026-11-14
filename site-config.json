@@ -1,9 +1,9 @@
 {
-  "_help": "Fill in only what you have. Anything left empty stays hidden on the site. Keep the quotes and commas exactly as they are.",
-  "availability": "",
+  "_help": "Fill in only what you have. Anything left empty stays hidden on the site. Keep the quotes and commas exactly as they are. Under prices, add text such as 'From $500 a month' to show it on the matching service card.",
+  "availability": "Open for new clients. Intro calls Mon–Fri, about 4–8pm Pacific (5–9pm Mountain).",
   "intro_video": "",
   "intro_poster": "",
-  "booking_url": "",
+  "booking_url": "https://calendly.com/jap-pulido789/30min",
   "testimonials": [
     {
       "quote": "Japhette took a massive weight off our shoulders by building out our employee handbooks, attendance policies, and day-to-day compliance tracking across multiple store locations. He jumped right in, organized our processes, and consistently delivered reliable support without needing to be micromanaged.",
@@ -34,5 +34,10 @@
   ],
   "workflow_screenshot": "",
   "workflow_caption": "",
-  "goatcounter": ""
+  "goatcounter": "",
+  "prices": {
+    "automation": "From $10 an hour",
+    "social": "From $350 a month",
+    "ea": "From $7 an hour"
+  }
 }
