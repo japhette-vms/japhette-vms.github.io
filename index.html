@@ -5,12 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Japhette Alec Pulido | Executive Assistant &amp; GoHighLevel Automation</title>
 <meta name="theme-color" content="#4b3fd6">
+<script>(function(){var r=document.documentElement;r.className+=" js";var s=null;try{s=localStorage.getItem("theme")}catch(e){}if(s!=="dark"&&s!=="light"){s=window.matchMedia&&matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"}r.setAttribute("data-theme",s)})();</script>
 <meta name="description" content="Executive Assistant and Operations Support with GoHighLevel funnels and automation experience. Based in the Philippines, available to overlap US business hours.">
 <meta property="og:title" content="Japhette Alec Pulido | Executive Assistant &amp; GoHighLevel Automation">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://japhette-vms.github.io/">
 <meta property="og:description" content="Executive Assistant and Operations Support with GoHighLevel funnels and automation. Based in the Philippines, available to overlap US business hours.">
-<meta property="og:image" content="https://japhette-vms.github.io/og-image.png">
+<meta property="og:image" content="https://japhette-vms.github.io/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="canonical" href="https://japhette-vms.github.io/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Japhette Alec Pulido", "jobTitle": "Executive Assistant & GoHighLevel Automation Specialist", "description": "Executive Assistant and Operations Support with GoHighLevel funnels and automation experience. Based in the Philippines, available to overlap US business hours.", "url": "https://japhette-vms.github.io/", "email": "jap.pulido789@gmail.com", "image": "https://japhette-vms.github.io/profile.jpg", "address": {"@type": "PostalAddress", "addressCountry": "PH"}, "sameAs": ["https://www.linkedin.com/in/japhette-alec-pulido"], "knowsAbout": ["Executive Assistance", "Operations Support", "GoHighLevel", "Funnels and Automation", "Lead Follow-up", "Cold Calling", "Customer Support", "Performance Reporting", "Social Media Management"], "alumniOf": {"@type": "CollegeOrUniversity", "name": "Colegio de San Juan de Letran"}}</script>
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%234b3fd6%27/%3E%3Ctext x=%2750%27 y=%2768%27 font-size=%2756%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27sans-serif%27 font-weight=%27bold%27%3EJP%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +23,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f6f5fd;--surface:#fff;--ink:#1a1840;--muted:#5b5a7d;--line:#dedcf2;--accent:#4b3fd6;--accent-ink:#fff;--mark:#f3c76b}
-@media (prefers-color-scheme:dark){:root{--bg:#13112b;--surface:#1d1a3f;--ink:#ecebfa;--muted:#a8a6cf;--line:#2f2b5e;--accent:#9c93ff;--accent-ink:#13112b;--mark:#c99a2e}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13112b;--surface:#1d1a3f;--ink:#ecebfa;--muted:#a8a6cf;--line:#2f2b5e;--accent:#9c93ff;--accent-ink:#13112b;--mark:#c99a2e}}
+:root[data-theme="dark"]{--bg:#13112b;--surface:#1d1a3f;--ink:#ecebfa;--muted:#a8a6cf;--line:#2f2b5e;--accent:#9c93ff;--accent-ink:#13112b;--mark:#c99a2e}
+:root[data-theme="light"]{--bg:#f6f5fd;--surface:#fff;--ink:#1a1840;--muted:#5b5a7d;--line:#dedcf2;--accent:#4b3fd6;--accent-ink:#fff;--mark:#f3c76b}
+#theme{font:inherit;font-weight:500;cursor:pointer;background:transparent;color:var(--ink);border:2px solid var(--accent);border-radius:2rem;padding:.25rem .85rem}
+#theme:hover{color:var(--accent)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
@@ -110,21 +119,42 @@ footer p{margin:.3rem 0;color:var(--muted)}
 .up{font-size:.92rem}
 @media (max-width:40rem){.hero{padding:1.25rem 0 1rem;grid-template-columns:1fr}.hero .photo{width:7rem;height:7rem;order:-1}}
 @media (prefers-reduced-motion:reduce){#stick{transition:none}}
+
+/* ---- beautification layer ---- */
+:root{--g2:#d9622b;--glow:rgba(75,63,214,.18);--bgimg:url(bg-light.webp)}
+:root[data-theme="dark"]{--g2:#ff9a76;--glow:rgba(156,147,255,.38);--bgimg:url(bg.jpg)}
+body{position:relative}
+.bg{position:absolute;inset:0 0 auto 0;height:max(100svh,42rem);z-index:-1;pointer-events:none;overflow:hidden;-webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
+.bg::before{content:"";position:absolute;inset:0;background:var(--bgimg) right top/cover no-repeat}
+.bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0,transparent 55%)}
+.grad{background:linear-gradient(90deg,var(--accent),var(--g2));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margin-top:.6rem;background:linear-gradient(90deg,var(--accent),var(--g2))}
+.photo{box-shadow:0 0 0 2px var(--accent),0 0 48px var(--glow)}
+.pill,.pipe,.stats li{background:var(--surface);background:color-mix(in srgb,var(--surface) 76%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.grid>div,.stats li,.quotes blockquote,.proj,.faq details{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+@media (hover:hover){.grid>div:hover,.stats li:hover,.quotes blockquote:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 10px 28px var(--glow)}}
+.btn.main{box-shadow:0 6px 22px var(--glow)}
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:640px){.bg{opacity:.55}.bg::after{background:linear-gradient(90deg,var(--bg) 0,transparent 80%)}}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.grid>div:hover,.stats li:hover,.quotes blockquote:hover{transform:none}}
+@media (max-width:640px){nav div{gap:.4rem .85rem}nav a{font-size:.95rem}#theme{padding:.1rem .65rem}}
 </style>
 </head>
 <body>
+<div class="bg" aria-hidden="true"></div>
 <a class="skip" href="#work">Skip to content</a>
 <div class="wrap" id="top">
-<nav><b>Japhette Alec Pulido</b><div><a href="#work">What I do</a><a href="#case-study">Case study</a><a href="#my-work">Work</a><a href="#experience">Experience</a><a href="#how">How I work</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></nav>
+<nav><b>Japhette Alec Pulido</b><div><a href="#work">What I do</a><a href="#case-study">Case study</a><a href="#my-work">Work</a><a href="#experience">Experience</a><a href="#how">How I work</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><button id="theme" type="button" aria-pressed="false">Noir</button></div></nav>
 
 <header class="hero">
 <div>
 <span class="pill" id="avail">Open to new roles · Philippines (PHT) · overlaps US hours</span>
-<h1>I build the follow-up systems that turn leads into members.</h1>
-<p>Executive Assistant and Operations Support with GoHighLevel funnels and automation. Fourteen years running my own business and three years supporting US-based clients remotely.</p>
+<h1>I build the follow-up systems that <span class="grad">turn leads into members.</span></h1>
+<p>Executive Assistant and Operations Support with GoHighLevel funnels and automation. Running my own business since 2012 and supporting US-based clients remotely for three years.</p>
 <div class="btns"><a class="btn main" href="mailto:jap.pulido789@gmail.com">Email me</a><a class="btn alt" href="resume.pdf">Download resume</a><a class="btn alt" href="#book" id="bookbtn" hidden>Book a call</a></div>
 </div>
-<img class="photo" src="profile.png" alt="Portrait of Japhette Alec Pulido" onerror="this.style.display='none'">
+<img class="photo" src="profile.jpg" alt="Portrait of Japhette Alec Pulido" onerror="this.style.display='none'">
 </header>
 
 <ol class="pipe" aria-label="Example lead pipeline I have built in GoHighLevel">
@@ -295,6 +325,20 @@ if(safe(c.workflow_screenshot)){var f=$("shot"),im=f.querySelector("img");im.src
 if(c.goatcounter&&/^[a-z0-9-]+$/i.test(c.goatcounter)){var sc=document.createElement("script");sc.async=true;sc.src="https://gc.zgo.at/count.js";sc.setAttribute("data-goatcounter","https://"+c.goatcounter+".goatcounter.com/count");document.body.appendChild(sc)}
 });
 })();
+</script>
+<script>
+(function(){var r=document.documentElement,b=document.getElementById("theme");
+function sys(){return window.matchMedia&&matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"}
+function apply(t){r.setAttribute("data-theme",t);b.textContent=t==="dark"?"Bright":"Noir";b.setAttribute("aria-pressed",t==="dark");b.setAttribute("aria-label",t==="dark"?"Switch to Bright mode":"Switch to Noir mode")}
+var s=null;try{s=localStorage.getItem("theme")}catch(e){}
+apply(s==="dark"||s==="light"?s:sys());
+b.addEventListener("click",function(){var t=r.getAttribute("data-theme")==="dark"?"light":"dark";apply(t);try{localStorage.setItem("theme",t)}catch(e){}});})();
+</script>
+<script>
+(function(){var s=[].slice.call(document.querySelectorAll("section"));
+if(!("IntersectionObserver" in window)){return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.05,rootMargin:"0px 0px -4% 0px"});
+s.forEach(function(x){x.classList.add("rv");io.observe(x)});})();
 </script>
 </body>
 </html>
