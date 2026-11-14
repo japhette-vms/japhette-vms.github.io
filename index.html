@@ -58,7 +58,7 @@ h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:1.5rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1rem}
 .grid>div{background:var(--surface);border:1px solid var(--line);border-radius:.6rem;padding:1.25rem}
 .grid h3{font-size:1.15rem;margin-bottom:.4rem}
-.grid p{margin:0;color:var(--muted);font-size:.97rem}
+.grid p{margin:0;color:var(--muted);font-size:.97rem}.grid p+p{margin-top:.6rem}.logos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:.8rem}.logos li{display:grid;place-items:center;height:5.2rem;padding:.6rem;border-radius:.7rem;border:1px solid var(--line)}.logos img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}.grid .price{color:var(--ink,inherit);font-weight:700}
 .job{display:grid;grid-template-columns:11rem 1fr;gap:1rem 2rem;padding:1.5rem 0;border-top:1px solid var(--line)}
 .job time{color:var(--muted);font-size:.95rem}
 .job h3{font-size:1.2rem}
@@ -66,7 +66,7 @@ h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:1.5rem}
 .job ul{margin:0;padding-left:1.1rem;max-width:62ch}
 .job li{margin-bottom:.35rem}
 .proj{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:.6rem;padding:1.5rem;max-width:44rem}
-.proj h3{font-size:1.35rem;margin-bottom:.5rem}
+.proj h3{font-size:1.35rem;margin-bottom:.5rem}.badge{display:inline-block;vertical-align:middle;margin-left:.4rem;padding:.15rem .6rem;border-radius:999px;border:1px solid var(--accent);color:var(--accent);font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
 .proj p{margin:0 0 1.1rem;color:var(--muted)}
 .group[hidden]{display:none}
 .group h3{font-size:1.4rem}
@@ -145,14 +145,14 @@ h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margi
 <div class="bg" aria-hidden="true"></div>
 <a class="skip" href="#work">Skip to content</a>
 <div class="wrap" id="top">
-<nav><b>Japhette Alec Pulido</b><div><a href="#work">What I do</a><a href="#case-study">Case study</a><a href="#my-work">Work</a><a href="design.html">Design</a><a href="#experience">Experience</a><a href="#how">How I work</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><button id="theme" type="button" aria-pressed="false">Noir</button></div></nav>
+<nav><b>Japhette Alec Pulido</b><div><a href="#work">What I do</a><a href="#case-study">Case study</a><a href="#my-work">Work</a><a href="design.html">Design</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#how">How I work</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><button id="theme" type="button" aria-pressed="false">Noir</button></div></nav>
 
 <header class="hero">
 <div>
 <span class="pill" id="avail">Open to new roles · Philippines (PHT) · overlaps US hours</span>
 <h1>I build the follow-up systems that <span class="grad">turn leads into members.</span></h1>
 <p>Executive Assistant and Operations Support with GoHighLevel funnels and automation. Running my own business since 2012 and supporting US-based clients remotely for three years.</p>
-<div class="btns"><a class="btn main" href="mailto:jap.pulido789@gmail.com">Email me</a><a class="btn alt" href="resume.pdf">Download resume</a><a class="btn alt" href="#book" id="bookbtn" hidden>Book a call</a></div>
+<div class="btns"><a class="btn main" href="mailto:jap.pulido789@gmail.com">Email me</a><a class="btn alt" href="resume.pdf">Download resume</a><a class="btn alt" href="#audit">Free mini audit</a><a class="btn alt" href="#book" id="bookbtn" hidden>Book a call</a></div>
 </div>
 <img class="photo" src="profile.jpg" alt="Portrait of Japhette Alec Pulido" onerror="this.style.display='none'">
 </header>
@@ -194,6 +194,11 @@ h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margi
 <p class="gd" style="margin-top:1.25rem">I tracked lead sources, show rates, and trial-to-member conversion, and sent weekly and monthly reports. Alongside the automation, I made and took about 100 calls a day, logged in Google Sheets, and booked about 50 gym appointments a month, roughly 90% of the monthly quota.</p>
 </section>
 
+<section id="clients">
+<h2>Businesses I have supported</h2>
+<ul class="logos" aria-label="Business logos"><li style="background:rgb(255, 255, 255)"><img src="work/clients/client-1.jpg" alt="Fit Body Boot Camp logo" loading="lazy" width="235" height="90"></li><li style="background:rgb(255, 203, 4)"><img src="work/clients/client-2.jpg" alt="DHL logo" loading="lazy" width="420" height="94"></li><li style="background:rgb(253, 253, 253)"><img src="work/clients/client-3.jpg" alt="WJ Construction and Engineering Services logo" loading="lazy" width="420" height="325"></li><li style="background:rgb(9, 9, 10)"><img src="work/clients/client-4.jpg" alt="Elusive Wraps logo" loading="lazy" width="420" height="140"></li><li style="background:rgb(0, 0, 0)"><img src="work/clients/client-5.jpg" alt="Zapatos logo" loading="lazy" width="420" height="420"></li><li style="background:rgb(1, 1, 1)"><img src="work/clients/client-6.jpg" alt="DR.PPF logo" loading="lazy" width="420" height="399"></li></ul>
+</section>
+
 <section id="proof" hidden>
 <h2>What clients say</h2>
 <div class="quotes" id="quotes"></div>
@@ -205,6 +210,11 @@ h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margi
 <h3>Content Calendar</h3>
 <p>A web app I built to replace my Excel social media content calendar. Posts are planned in one place, stored in a database, and sent to the client for approval.</p>
 <a class="btn main" href="https://japhette-vms.github.io/content-calendar/" target="_blank" rel="noopener">Open the app</a>
+</div>
+<div class="proj soon" style="margin-top:1rem">
+<h3>Lead and booking system <span class="badge">Coming soon</span></h3>
+<p>I’m planning my own lightweight lead and booking tool, built from what I have learned running pipelines, follow-up, and reminders in GoHighLevel. It is in development. Tell me what you would want it to do on an intro call.</p>
+<a class="btn main" href="#book">Book a call</a>
 </div>
 </section>
 
@@ -242,10 +252,32 @@ h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margi
 <article class="job"><time>2008 – 2012</time><div><h3>BS Information Technology, Major in System Engineering</h3><div class="co">Colegio de San Juan de Letran</div></div></article>
 </section>
 
+<section id="services">
+<h2>Services and pricing</h2>
+<p class="gd">Starting rates are below. I confirm the final scope and price in writing after a short intro call.</p>
+<div class="grid">
+<div><h3>GoHighLevel automation</h3><p>Lead capture, pipelines with automated follow-up, booking calendars and reminders, missed-call text-back, and reporting. A good fit for gyms, studios, and local service businesses.</p><p class="price" data-k="automation" hidden></p></div>
+<div><h3>Social media management</h3><p>Monthly content planning, a content calendar with client approval, scheduling, and posts adapted to each location or market.</p><p class="price" data-k="social" hidden></p></div>
+<div><h3>Executive assistant and operations</h3><p>Calendar, email, and calls, plus handbooks, checklists, compliance tracking, and customer or member support.</p><p class="price" data-k="ea" hidden></p></div>
+</div>
+<p style="margin-top:1.25rem"><a class="btn main" href="#book">Book a free intro call</a> <a class="btn alt" href="services-and-rates.pdf" download>Download services sheet</a></p>
+</section>
+
+<section id="audit">
+<h2>Free mini audit</h2>
+<p class="gd">Send me how you handle leads today and I will send back 3 specific fixes, free.</p>
+<div class="grid">
+<div><h3>1. You send</h3><p>Your lead sources, what happens after someone fills a form, and how you handle bookings and reminders.</p></div>
+<div><h3>2. I review</h3><p>I look for slow replies, missed follow-ups, missing reminders, and leads that go cold.</p></div>
+<div><h3>3. You get 3 fixes</h3><p>A short note with the 3 changes that matter most, in order, and how long each takes.</p></div>
+</div>
+<p style="margin-top:1.25rem"><a class="btn main" href="mailto:jap.pulido789@gmail.com?subject=Free%20mini%20audit&amp;body=Hi%20Japhette%2C%20here%20is%20how%20we%20handle%20leads%20today%3A">Request a free audit</a></p>
+</section>
+
 <section id="how">
 <h2>How I work</h2>
 <div class="grid">
-<div><h3>Time zone</h3><p>I’m in the Philippines (PHT) and overlap US business hours, so calls and replies happen during your working day.</p></div>
+<div><h3>Time zone</h3><p>I’m in the Philippines (PHT). I take calls in your late afternoon and evening (about 4–8pm Pacific, 5–9pm Mountain) and reply to messages within one business day.</p></div>
 <div><h3>Communication</h3><p>I work in email, Slack, Google Workspace and Microsoft 365, and send notes and follow-ups after meetings.</p></div>
 <div><h3>Reporting</h3><p>Weekly and monthly performance reports, with calls and leads tracked in Google Sheets.</p></div>
 <div><h3>Documentation</h3><p>I write handbooks and checklists so the work can be repeated, as I did for 5 stores in 4 states.</p></div>
@@ -278,12 +310,16 @@ h2::after{content:"";display:block;width:3rem;height:4px;border-radius:2px;margi
 
 <section id="faq" class="faq">
 <h2>FAQ</h2>
-<details><summary>What time zone do you work in?</summary><p>Philippine Time (PHT). I overlap US business hours so I’m available during your working day.</p></details>
+<details><summary>What time zone do you work in?</summary><p>Philippine Time (PHT). For US clients, I take calls in your late afternoon and evening, about 4–8pm Pacific and 5–9pm Mountain, Monday to Friday. Messages get a reply within one business day.</p></details>
 <details><summary>What can you set up in GoHighLevel?</summary><p>Pipelines with automated follow-up at each stage, instant replies to new leads, missed-call text-back, booking calendars with reminders, call follow-up sequences, email blasts, contact tagging, and reporting.</p></details>
 <details><summary>Do you only work with gyms?</summary><p>No. My work includes a DHL Express partner shop network (5 stores in 4 states), a construction and engineering business, and fitness studios.</p></details>
 <details><summary>Which tools do you use?</summary><p>GoHighLevel, Salesforce, Zendesk, Google Workspace, Microsoft 365, Notion, Asana, Trello, Slack, Meta Business Suite, Buffer, Canva, CapCut, and AI tools such as ChatGPT, Claude, and Gemini. The full list is under Skills.</p></details>
 <details><summary>How do you handle client information?</summary><p>I keep client and customer details out of public work. For example, I blurred customer names on package labels in this portfolio.</p></details>
 <details><summary>Are you available for new roles?</summary><p>Yes. Email or message me on WhatsApp to talk about hours and a start date.</p></details>
+<details><summary>What happens on the intro call?</summary><p>We spend 30 minutes on your goals and how leads, bookings, and social media work today. I tell you honestly whether I can help, and if so, what I would do first. There is no prep and no cost.</p></details>
+<details><summary>How does pricing work?</summary><p>I quote after the intro call, based on the size of the work. You get the scope and price in writing before we start.</p></details>
+<details><summary>Do you have certifications?</summary><p>No. I’m self-taught and learned by doing the work across gyms, a DHL Express partner shop network, and an engineering business. The case study, testimonials, and work samples on this page show what I have done.</p></details>
+<details><summary>Can you work in the tools I already use?</summary><p>Yes. I work in your existing CRM, calendar, and communication tools, and I can set up GoHighLevel if you don’t have a system yet.</p></details>
 </section>
 
 <section id="book" class="book" hidden>
@@ -324,7 +360,7 @@ new IntersectionObserver(function(e){hid.hero=e[0].isIntersecting;upd()},{thresh
 new IntersectionObserver(function(e){hid.ct=e[0].isIntersecting;upd()},{threshold:0}).observe(ct);
 hid.hero=true;upd();}else{st.classList.remove("off")}
 function safe(u){return typeof u==="string"&&/^(https:\/\/|[A-Za-z0-9_\-\/.]+$)/.test(u)}
-fetch("site-config.json",{cache:"no-cache"}).then(function(r){return r.ok?r.json():{}}).catch(function(){return {}}).then(function(c){
+fetch("site-config.json",{cache:"no-cache"}).then(function(r){return r.ok?r.json():{}}).catch(function(){return {}}).then(function(c){var pr=c.prices||{};document.querySelectorAll(".price[data-k]").forEach(function(e){var v=pr[e.dataset.k];if(typeof v==="string"&&v.trim()){e.textContent=v;e.hidden=false}});
 if(!c)return;
 if(c.availability){$("avail").textContent=c.availability}
 if(safe(c.intro_video)){var v=$("introv");v.src=c.intro_video;if(safe(c.intro_poster))v.poster=c.intro_poster;$("intro").hidden=false}
